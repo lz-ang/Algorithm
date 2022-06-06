@@ -6,7 +6,6 @@ import java.util.List;
 
 public class LeetCode_21 {
 
-
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         List<Integer> list = new ArrayList<>();
         while (list1 != null) {
