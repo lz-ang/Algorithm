@@ -1,13 +1,13 @@
-package src.com.ang;
+package com.ang;
 
 public class CountPoint_1828 {
 
-    public static void main(String[] args) {
-        int[][] points = {{1,3},{3,3},{5,3},{2,2}};
-        int[][] queries  = {{2,3,1},{4,3,1},{1,1,2}};
-
-        countPoints(points, queries);
-    }
+//    public static void main(String[] args) {
+//        int[][] points = {{1,3},{3,3},{5,3},{2,2}};
+//        int[][] queries  = {{2,3,1},{4,3,1},{1,1,2}};
+//
+//        countPoints(points, queries);
+//    }
 
     public static int[] countPoints(int[][] points, int[][] queries) {
         int[] result = new int[queries.length];

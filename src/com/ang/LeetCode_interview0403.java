@@ -1,4 +1,4 @@
-package src.com.ang;
+package com.ang;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -7,13 +7,13 @@ import java.util.List;
 
 public class LeetCode_interview0403 {
 
-    public static void main(String[] args) {
-        TreeNode treeNode = new TreeNode(1);
-        treeNode.left = new TreeNode(2);
-        treeNode.right = new TreeNode(3);
-
-        listOfDepth(treeNode);
-    }
+//    public static void main(String[] args) {
+//        TreeNode treeNode = new TreeNode(1);
+//        treeNode.left = new TreeNode(2);
+//        treeNode.right = new TreeNode(3);
+//
+//        listOfDepth(treeNode);
+//    }
 
     public static ListNode[] listOfDepth(TreeNode tree) {
 

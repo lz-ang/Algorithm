@@ -1,10 +1,10 @@
-package src.com.ang;
+package com.ang;
 
 public class MinPartition_1689 {
-    public static void main(String[] args) {
-        String s = "32";
-        minPartitions(s);
-    }
+//    public static void main(String[] args) {
+//        String s = "32";
+//        minPartitions(s);
+//    }
 
     public static int minPartitions(String n) {
         char[] num = n.toCharArray();

@@ -1,4 +1,4 @@
-package src.com.ang;
+package com.ang;
 
 public class Account_1672 {
 

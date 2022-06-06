@@ -1,4 +1,4 @@
-package src.com.ang;
+package com.ang;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +7,7 @@ import java.util.List;
 public class LeetCode_237 {
 
     public static void main(String[] args) {
-        ListNode head = new ListNode(0);
+        com.ang.ListNode head = new com.ang.ListNode(0);
         head.next = new ListNode(1);
         head.next.next = new ListNode(0);
         head.next.next.next = new ListNode(3);

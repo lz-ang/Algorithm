@@ -1,4 +1,4 @@
-package src.com.ang;
+package com.ang;
 
 //二进制链表转整数
 public class LeetCode_1290 {
