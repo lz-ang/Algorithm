@@ -7,7 +7,7 @@ import java.util.PriorityQueue;
 //合并K个升序链表
 public class LeetCode_23 {
 
-    public com.ang.ListNode mergeKLists(com.ang.ListNode[] lists) {
+    public ListNode mergeKLists(ListNode[] lists) {
         // ListNode cur = null;
         // for (int i = 0; i < lists.length; i++) {
         //     cur = margeLists(cur, lists[i]);
@@ -16,15 +16,15 @@ public class LeetCode_23 {
 
         //利用Java中小顶堆PriorityQueue
         if (lists == null || lists.length == 0) return null;
-        PriorityQueue<com.ang.ListNode> queue = new PriorityQueue<>(lists.length, new Comparator<com.ang.ListNode>() {
+        PriorityQueue<ListNode> queue = new PriorityQueue<>(lists.length, new Comparator<ListNode>() {
             @Override
-            public int compare(com.ang.ListNode o1, com.ang.ListNode o2) {
+            public int compare(ListNode o1, ListNode o2) {
                 return o1.val-o2.val;
             }
         });
-        com.ang.ListNode dummy = new com.ang.ListNode(0);
-        com.ang.ListNode p = dummy;
-        for (com.ang.ListNode node : lists) {
+        ListNode dummy = new ListNode(0);
+        ListNode p = dummy;
+        for (ListNode node : lists) {
             if (node != null) queue.add(node);
         }
         while (!queue.isEmpty()) {
@@ -35,12 +35,12 @@ public class LeetCode_23 {
         return dummy.next;
     }
 
-    private com.ang.ListNode margeLists(com.ang.ListNode a, com.ang.ListNode b) {//没两个合并一次，合并后的再和后续链表再次两两合并
+    private ListNode margeLists(ListNode a, ListNode b) {//每两个合并一次，合并后的再和后续链表再次两两合并
         if (a == null || b == null) {
             return a != null ? a : b;
         }
-        com.ang.ListNode head = new com.ang.ListNode(0);
-        com.ang.ListNode cur = head;
+        ListNode head = new ListNode(0);
+        ListNode cur = head;
         while (a != null && b != null) {
             if (a.val > b.val) {
                 cur.next = b;

@@ -4,18 +4,19 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
+//合并两个有序链表
 public class LeetCode_21 {
 
-    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+    public ListNode mergeTwoLists(ListNode head1, ListNode head2) {
         List<Integer> list = new ArrayList<>();
-        while (list1 != null) {
-            list.add(list1.val);
-            list1 = list1.next;
+        while (head1 != null) {
+            list.add(head1.val);
+            head1 = head1.next;
         }
 
-        while (list2 != null) {
-            list.add(list2.val);
-            list2 = list2.next;
+        while (head2 != null) {
+            list.add(head2.val);
+            head2 = head2.next;
         }
         list.sort(new Comparator<Integer>() {
             @Override
