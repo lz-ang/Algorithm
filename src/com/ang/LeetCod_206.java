@@ -13,9 +13,9 @@ public class LeetCod_206 {
 //        System.out.println(reverseList(listNode));;
 //    }
 
-    public static ListNode reverseList2(ListNode head) {
-        ListNode pre = null;
-        ListNode cur = head;
+    public ListNode reverseList2(ListNode head) {
+        ListNode pre = null; //记录在构建翻转链表过程中的类似的头结点
+        ListNode cur = head; //原链表中的头结点
         while (cur != null) {
             ListNode next = cur.next;//先存储下一个节点
             cur.next = pre;

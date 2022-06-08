@@ -35,7 +35,7 @@ public class LeetCode_23 {
         return dummy.next;
     }
 
-    private ListNode margeLists(ListNode a, ListNode b) {//没两个合并一次，合并后的再和后续链表再次两两合并
+    private ListNode margeLists(ListNode a, ListNode b) {//每两个合并一次，合并后的再和后续链表再次两两合并
         if (a == null || b == null) {
             return a != null ? a : b;
         }

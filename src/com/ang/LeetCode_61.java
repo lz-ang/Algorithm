@@ -6,17 +6,23 @@ import com.sun.org.apache.xpath.internal.objects.XNull;
 public class LeetCode_61 {
 
     public static void main(String[] args) {
-        ListNode listNode = new ListNode(1);
-        listNode.next = new ListNode(2);
-        listNode.next.next = new ListNode(3);
-        listNode.next.next.next = new ListNode(4);
-        listNode.next.next.next.next = new ListNode(5);
-        listNode.next.next.next.next.next = new ListNode(6);
-        listNode.next.next.next.next.next.next = new ListNode(7);
-        listNode.next.next.next.next.next.next.next = new ListNode(8);
-        listNode.next.next.next.next.next.next.next.next = new ListNode(9);
-
-        System.out.println(rotateRight(listNode, 2));
+        ListNode head = new ListNode(1);
+//        head.next = new ListNode(2);
+//        head.next.next = new ListNode(3);
+//        head.next.next.next = new ListNode(4);
+//        head.next.next.next.next = new ListNode(5);
+//        head.next.next.next.next.next = new ListNode(6);
+//        head.next.next.next.next.next.next = new ListNode(7);
+//        head.next.next.next.next.next.next.next = new ListNode(8);
+//        head.next.next.next.next.next.next.next.next = new ListNode(9);
+        ListNode cur = head;
+        for (int i = 2; i <= 9; i++) {
+            cur.next = new ListNode(i);
+            cur = cur.next;
+        }
+//        new LeetCode_19_2().removeNthFromEnd2(head,2);
+        System.out.println(new LeetCode_876().middleNode(head));;
+        System.out.println(rotateRight(head, 2));
     }
 
     public static ListNode rotateRight(ListNode head, int k) {
