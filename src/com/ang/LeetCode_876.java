@@ -1,5 +1,6 @@
 package com.ang;
 
+//求链表的中间结点
 public class LeetCode_876 {
 
 
